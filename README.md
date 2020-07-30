@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/sonullx/workflow.svg?branch=master)](https://travis-ci.org/sonullx/workflow)
 [![license MIT](https://img.shields.io/badge/License-Apache-yellow.svg)](https://git.sogou-inc.com/wujiaxu/Filter/blob/master/LICENSE)
 [![C++](https://img.shields.io/badge/language-c++-red.svg)](https://en.cppreference.com/)
 [![code style](https://img.shields.io/badge/code%20style-google-blue.svg)](https://google.github.io/styleguide/cppguide.html)
