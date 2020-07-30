@@ -22,7 +22,10 @@ jobs:
 
 before_script:
   - mkdir -p build && cd build
-  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX=$HOME/.local -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/; else cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX=$HOME/.local; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then OPENSSL_PATH="-DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/"; fi
+  - FLAGS="-DCMAKE_BUILD_TYPE=$BUILD_TYPE $OPENSSL_PATH"
+  - cmake .. -G "Unix Makefiles" $FLAGS
   - cd ..
 
-script: cd build && cmake --build . && cd ..
+script:
+  - cd build && cmake --build . && cd ..
