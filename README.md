@@ -2,7 +2,7 @@
 [![license MIT](https://img.shields.io/badge/License-Apache-yellow.svg)](https://git.sogou-inc.com/wujiaxu/Filter/blob/master/LICENSE)
 [![C++](https://img.shields.io/badge/language-c++-red.svg)](https://en.cppreference.com/)
 [![code style](https://img.shields.io/badge/code%20style-google-blue.svg)](https://google.github.io/styleguide/cppguide.html)
-[![platform](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey.svg)](#12-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%94%AF%E6%8C%81)
+[![platform](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey.svg)](#)
 
 # Sogou C++ Workflow
 #### 搜狗公司的后端C++编程标准，是一套企业级的程序引擎。主要功能和特点：
@@ -33,7 +33,7 @@
   * 目前项目支持Linux，macOS，FreeBSD，Windows等系统。需要安装cmake。
     * Windows版暂时以独立branch发布，以iocp为异步通讯基础，对外接口一致。
   * 该项目使用C/C++编写，使用者需要能比较熟练的使用C++编程。不依赖boost或asio，编译速度极快。
-  * 用到少量的C++11特征，用户需要会使用std::function和std::move()。
+  * 用到少量的C++11特征，用户需要会使用`std::function`和`std::move()`。
   * 理论支持一切CPU架构，可以在32位或64位arm处理器上编译运行。Big endian CPU未测试。
   * 项目需要依赖openssl。如果用户对SSL性能要求高，强烈建议使用openssl 1.1以上版本。
   * 项目无其他依赖，但包含了snappy，lz4等几个压缩库的无改动源代码（kafka协议需要）。
