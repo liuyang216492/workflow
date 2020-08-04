@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.org/sonullx/workflow.svg?branch=master)](https://travis-ci.org/sonullx/workflow)
-[![license MIT](https://img.shields.io/badge/License-Apache-yellow.svg)](https://git.sogou-inc.com/wujiaxu/Filter/blob/master/LICENSE)
-[![C++](https://img.shields.io/badge/language-c++-red.svg)](https://en.cppreference.com/)
 
 # Sogou C++ Workflow
 #### 搜狗公司的后端C++编程标准，是一套企业级的程序引擎。主要功能和特点：
